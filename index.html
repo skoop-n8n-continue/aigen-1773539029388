@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Image Viewer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #10181f;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .image-container {
+            max-width: 90vw;
+            max-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        .description-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            border-radius: 8px;
+            max-width: 80vw;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .description-box h2 {
+            color: #00b7af;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        .description-box p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://skoop-general.s3.us-east-1.amazonaws.com/1773539046778-ce1aabe2-d086-4462-91ad-8f70ef4c5913+%281%29.jpg?v=x1a2b3" alt="Uploaded Image">
+    </div>
+    <div class="description-box">
+        <h2>Image Description</h2>
+        <p>This is the image you provided. As an AI in this current environment, I am unable to analyze the pixel content of the attached image. Please provide a text description if specific image content processing is needed!</p>
+    </div>
+</body>
+</html>
